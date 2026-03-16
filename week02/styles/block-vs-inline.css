@@ -40,3 +40,7 @@ code {
     background-color: #3d503d;
     color: #fff;
 }
+
+main p span {
+    display: block;
+}
