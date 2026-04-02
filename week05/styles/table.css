@@ -17,3 +17,10 @@ tfoot tr {
     color: white;
     font-weight: 700;
 }
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}

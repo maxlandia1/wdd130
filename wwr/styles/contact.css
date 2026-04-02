@@ -1,0 +1,147 @@
+:root {
+    --primary-color: blue;
+    --accent1-color: #100;
+    --heading-font: "Times New Roman";
+    --body-font: Arial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: lightskyblue
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 50px;
+    margin: 10px;
+    width: 400px;
+    ;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: lightskyblue;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+
+}
+
+.socialmedia img {
+    width: 50px;
+    height: auto;
+}
+
+main,
+h1 p {
+    text-align: center;
+    margin-left: 350px;
+    padding: 20px;
+}
+
+header {
+    border: 1px solid brown
+}
+
+.map iframe {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.form-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.form-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-row input {
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.form-row1 label {
+    display: flex;
+}
+
+.form-row1 textarea {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    ;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
