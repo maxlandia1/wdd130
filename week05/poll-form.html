@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | HTML Form User-poll</h1>
+    </header>
+    <main>
+
+        <form>
+            <fieldset>
+                <legend>contact Information</legend>
+                <div class="form-item column2">
+                    <label for=" fullname">Fullname:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question</legend>
+                <label for="quantity">Select Quantity</label>
+                <div class="form-item column1">
+
+                    <select name="quantity" id="quantity">
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <label for="browser">What is your favourite internet browser?</label>
+                <div class="form-item column1">
+                    <select name="browser" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="edge">Edge</option>
+                        <option value="safari">Safari</option>
+                        <option value="brave">Brave</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <label for="feedback">List the places you have lived</label>
+                <textarea name="feedback" id="feedback" rows="2"
+                  placeholder="Nigeria, USA"></textarea>
+                <button type="submit">Submit poll</button>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        ©️ 2026 | HTML Form - User Poll Activty | Amenaghawon Imuetinyan Favour
+    </footer>
+</body>
+
+</html>
