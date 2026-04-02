@@ -145,3 +145,7 @@ button {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
+iframe {
+    border: 0;
+}
