@@ -24,6 +24,25 @@ footer {
 
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: lightskyblue;
+    border: 1px solid brown
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 50px;
+    margin: 10px;
+    width: 400px;
+    ;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -97,24 +116,6 @@ h2 {
     color: white;
     padding: 16px;
     width: 100%;
-
-}
-
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: lightskyblue
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 50px;
-    margin: 10px;
-    width: 400px;
 
 }
 

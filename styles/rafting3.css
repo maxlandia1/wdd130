@@ -1,4 +1,3 @@
-/* ================= ROOT ================= */
 :root {
     --primary-color: blue;
     --accent1-color: #100;
@@ -16,11 +15,6 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-}
-
-.about-page h1,
-.about-page h2 {
-    color: var(--primary-color);
 }
 
 /* ================= LAYOUT ================= */
@@ -70,12 +64,17 @@ footer {
 }
 
 /* ================= HEADINGS ================= */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
 
 h2 {
     text-align: center;
 }
 
-/* ================= HERO (ABOUT) ================= */
+/* ================= HERO (HOME + ABOUT) ================= */
 .hero {
     position: relative;
 }
@@ -85,8 +84,21 @@ h2 {
     display: block;
 }
 
+/* HOME HERO */
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: var(--accent1-color);
+    padding: 16px;
+    opacity: 0.7;
+}
+
 /* ABOUT HERO ARTICLE */
-hero {
+
+.hero {
     position: relative;
 }
 
@@ -137,56 +149,22 @@ hero {
 
 h2 {
     text-align: center;
+    background-color: var(--accent1-color);
     color: white;
     padding: 16px;
     width: 100%;
 
 }
 
-.hero1 {
-    position: relative;
-}
-
-.hero1 img {
-    width: 100%;
-    height: auto;
-}
-
-.hero1 h1 {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-}
-
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: lightskyblue;
-    margin-top: 10px;
+    background-color: lightskyblue
 }
 
 .history h2 {
-    grid-column: 1 / 4;
-    text-align: center;
-    background-color: var(--accent1-color);
-}
-
-.history p {
-    grid-column: 1, 2;
-    text-align: right;
-}
-
-.history img {
     grid-column: 2;
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
 }
 
 .container {
@@ -195,13 +173,11 @@ h2 {
     gap: 20px;
     background-color: lightskyblue;
     padding: 20px;
-    margin-top: 10px;
 
 }
 
 .container h2 {
     width: 100%;
-    background-color: var(--accent1-color);
 }
 
 .container figure {
@@ -214,6 +190,8 @@ h2 {
     height: auto;
     display: block;
 }
+
+/* ================= FORMS (CONTACT + NEWSLETTER) ================= */
 
 .map iframe {
     width: 300px;
@@ -301,6 +279,7 @@ iframe {
     border: 0;
 }
 
+/* ================= CTA ================= */
 .cta {
     position: absolute;
     top: 20%;
@@ -320,52 +299,18 @@ iframe {
 
 }
 
-.cta h1 {
-    color: white;
-}
-
 .cta h2 {
-    margin-bottom: 10px;
+    margin-top: 10px;
+    ;
     color: lavenderblush;
-
 }
 
-.newsletter form {
-    margin-bottom: 5px;
-    align-items: flex-start;
-    gap: 20px
-}
-
-.newsletter label {
-    font-weight: bold;
-}
-
-.newsletter h2 {
-    color: black;
-}
-
-.newsletter input {
-    border-radius: 5px;
-    box-sizing: border-box;
-    padding: 8px;
-    width: 100%;
-    border: 1px solid;
-}
-
-.newsletter button {
-    padding: 10px;
-    background-color: navy;
-    color: white;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
+/* ================= GRID (HOME PAGE) ================= */
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
-    background-color: antiquewhite;
 }
 
 .grid-item {
@@ -373,16 +318,37 @@ iframe {
 }
 
 .grid-item img {
-    width: 300px;
-    border: 5px solid pink;
+    width: 100%;
 }
+
+/* ================= ABOUT PAGE SECTIONS ================= */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: lightskyblue;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: lightskyblue;
+    padding: 20px;
+}
+
+.container figure {
+    width: 130px;
+}
+
+/* =================contact container ================= */
 
 .container2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     background-color: grey;
-    padding: 5px;
+    padding: 20px;
     justify-content: center;
     margin-top: 10px;
 }
@@ -390,7 +356,6 @@ iframe {
 .container2 h2 {
     width: 100%;
     text-align: center;
-    color: black;
 
 }
 
@@ -398,65 +363,4 @@ iframe {
     width: 200px;
     height: auto;
     padding: 10px;
-}
-
-.grid-items img {
-    width: 100%;
-    border: 5px solid pink;
-}
-
-.trips-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    background-color: beige;
-    margin-top: 20px;
-}
-
-.cta2 {
-    background-color: lightblue;
-    padding: 15px;
-    text-align: center;
-}
-
-.cta2 h2 {
-    color: #100;
-    margin-bottom: 10px;
-}
-
-.cta2 a {
-    background-color: lavenderblush;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-.trips-table h2 {
-    color: black;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 2px solid black;
-    letter-spacing: 1px;
-}
-
-th,
-td {
-    border: 1px solid black;
-    padding: 8px 12px;
-    text-align: center;
-}
-
-thead tr {
-    background-color: black;
-    color: white;
-    font-weight: 700;
-}
-
-tbody {
-    background-color: #f2f2f2;
 }
