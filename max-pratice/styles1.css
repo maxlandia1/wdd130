@@ -1,0 +1,33 @@
+main {
+    text-align: center;
+    background-color: lightgreen;
+    font-weight: bold;
+    width: 840px;
+    align-content: center;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+
+}
+
+section {
+    margin-top: 10px;
+    gap: 50px;
+    align-content: center;
+    background-color: navajowhite;
+    width: 840px;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    border: 3px solid navy;
+}
+
+body {
+    border: 2px solid black;
+    width: 840px;
+    background-color: lightblue;
+}
