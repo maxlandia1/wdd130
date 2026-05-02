@@ -2,7 +2,8 @@ main {
     text-align: center;
     background-color: lightgreen;
     font-weight: bold;
-    width: 500px;
+    width: 350px;
+    height: auto;
     align-content: center;
 }
 
@@ -17,8 +18,9 @@ section {
     gap: 50px;
     align-content: center;
     background-color: navajowhite;
-    width: 500px;
     text-align: center;
+    width: 350px;
+    height: auto;
 }
 
 img {
@@ -32,7 +34,7 @@ img {
 
 body {
     border: 2px solid black;
-    width: 504px;
+    width: 355px;
     background-color: lightblue;
 }
 
