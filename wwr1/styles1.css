@@ -2,7 +2,7 @@ main {
     text-align: center;
     background-color: lightgreen;
     font-weight: bold;
-    width: 840px;
+    width: 500px;
     align-content: center;
 }
 
@@ -17,13 +17,14 @@ section {
     gap: 50px;
     align-content: center;
     background-color: navajowhite;
-    width: 840px;
+    width: 500px;
     text-align: center;
 }
 
 img {
     width: 100%;
     height: auto;
+    max-width: 250px;
     display: block;
     border: 3px solid navy;
 
@@ -31,7 +32,7 @@ img {
 
 body {
     border: 2px solid black;
-    width: 840px;
+    width: 504px;
     background-color: lightblue;
 }
 
@@ -50,7 +51,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
 }
 
 section img {
